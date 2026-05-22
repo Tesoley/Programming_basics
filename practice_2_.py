@@ -5,10 +5,6 @@
 
 receipt = float(input("Enter the cost of the order: "))
 tip_percentage = float(input("How much do you want to tip (enter the value in percentage)?: "))/100
-
-while tip_percentage<1:
-    tip_percentage = float(input("How much do you want to tip (enter the value in percentage)?: ")) / 100
-    break
 final_price = receipt*(1+tip_percentage)
 people = int(input("How many people in the company?: "))
 individually = final_price/people
